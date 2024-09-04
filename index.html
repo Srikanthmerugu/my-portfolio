@@ -59,12 +59,13 @@
 
 	          		<div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '60%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Srikanth Merugu</span></h1>
 			            <h2 class="mb-4">A Freelance Web Designer</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> 
+							<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -88,7 +89,7 @@
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> based in Hyderabd</h1>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -587,7 +588,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p><a>igh tech city, Hyderabad, Telangana</a></p>
+	            <p><a>High tech city, Hyderabad, Telangana</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -619,32 +620,32 @@
           </div>
         </div>
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
-
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/contact-img.gif);"></div>
-          </div>
-        </div>
+		<div class="row no-gutters block-9">
+			<div class="col-md-6 order-md-last d-flex">
+				
+			  <form action="#" class="bg-light p-4 p-md-5 contact-form" onsubmit="sendEmail(event)">
+				<h3 class="text-warning text-center pb-4">Contact me...</h3>
+				<div class="form-group">
+				  <input type="text" name="from_name" class="form-control" placeholder="Your Name" required>
+				</div>
+				<div class="form-group">
+				  <input type="email" name="from_email" class="form-control" placeholder="Your Email" required>
+				</div>
+				<!-- <div class="form-group">
+				  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+				</div> -->
+				<div class="form-group">
+				  <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+				</div>
+				<div class="form-group">
+				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+				</div>
+			  </form>
+			</div>
+			<div class="col-md-6 d-flex">
+			  <div class="img" style="background-image: url(images/contact-img.gif);"></div>
+			</div>
+		  </div>
       </div>
     </section>
 <!-- Our team start  -->
@@ -740,10 +741,10 @@
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
           </div>
@@ -753,9 +754,9 @@
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Applications</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mobile Applications</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Figma Design</a></li>
               </ul>
             </div>
           </div>
@@ -764,9 +765,9 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">High Tech city, Hyderabad, Telangana.</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">High Tech City, Hyderabad, Telangana.</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">9704971428</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">srikanthmerugu04.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">srikanthmerugu04@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -804,6 +805,30 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+  <script>
+    emailjs.init("cBuUD5rDrOkFERy8R"); // Replace with your EmailJS user ID
+
+    function sendEmail(e) {
+    e.preventDefault();
+
+    // Send the form data using EmailJS
+    emailjs.sendForm('service_ucsvyd5', 'template_uslwbxe', e.target)
+      .then((result) => {
+        // Alert user of success
+        alert('Message sent successfully!');
+        
+        // Clear the form fields
+        e.target.reset();
+      }, (error) => {
+        // Alert user of failure
+        alert('Message failed to send. Please try again later.');
+      });
+  }
+  </script>
+
     
   </body>
 </html>
