@@ -9422,7 +9422,10 @@ textarea.form-control {
   @media (max-width: 767.98px) {
     .contact-section .contact-form .btn-primary {
       display: block;
-      width: 100%; } }
+      width: 100%; } 
+      .contact-section .img {
+        height: 0px; } 
+      }
 
 .block-9 .form-control {
   outline: none !important;
@@ -9719,6 +9722,7 @@ textarea.form-control {
       background-color: rgba(59, 51, 106, 0.6);
       transition: all 0.5s ease 0s;
       text-align: justify;
+      overflow: hidden;
   }
   .our-team:hover .description{
       opacity: 1;
